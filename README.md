@@ -10,7 +10,7 @@ Steps:
 5. The dataflow job reads the schema.json file to refer it to the BQ table.
 6. The cloud composer executes the DAG through the managed cloud composer environment. 
 
-Note: The cloud function python file version - 3.8 
+Note: The cloud function python file version is - 3.8 
 
 Room for improvement:
 1. Since the DAG is scehduled daily, the current cloud function just overwrites the data in BQ table; instead we can append the data to BQ.
