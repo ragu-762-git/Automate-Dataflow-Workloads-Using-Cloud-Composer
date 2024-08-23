@@ -1,4 +1,5 @@
 Project Description:
+
 The DAG is set to extract bastsmen ranking from the cricbuzz api on every day morning 6 am and load the CSV file into GCS bucket. Once the file hits the bucket, the Event arc trigger executes the cloud function which is set to trigger a dataflow job. The job transforms the data to JSON strings format to write it into BigQuery after imposing the provided schema. 
 
 Steps:
