@@ -9,3 +9,6 @@ Steps:
 4. The transformation happens in the dataflow itself using the transform.js file. 
 5. The dataflow job reads the schema.json file to refer it to the BQ table.
 6. The cloud composer executes the DAG through the managed cloud composer environment. 
+
+
+Note: The cloud function python file version - 3.8 
