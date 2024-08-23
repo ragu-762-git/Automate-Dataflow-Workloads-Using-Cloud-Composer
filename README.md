@@ -13,6 +13,6 @@ Note: The cloud function python file version - 3.8
 
 Room for improvement:
 1. Since the DAG is scehduled daily, the current cloud function just overwrites the data in BQ table; instead we can append the data to BQ.
-2. It is not necessary the schema of the data can be same on everyday ; so generalize the code to create the schema and create the table of not exists. We can provide the possible set of schemas on the .YAML file and we can write the data to BQ table only if the schema of the file matches any of the schemas from the .YAML file.
+2. It is not necessary the schema of the data can be same on everyday ; so generalize the code to create the schema and create the table if not exists. We can provide the possible set of schemas on the .YAML file and we can write the data to BQ table only if the schema of the file matches any of the schemas from the .YAML file predefined by us. 
 3. The current DAG is performing only one task (operator). We can increase the number of tasks performed by the DAG.
-4. Instead of using the job template provided by the Dataflow itself, we can define the pipeline's source, transformations in Apache Beam and sink and make this as a task for a DAG. 
+4. Instead of using the job template provided by the Dataflow itself, we can define our own pipeline's source, transformations in Apache Beam and sink and make this as a task for a DAG. 
