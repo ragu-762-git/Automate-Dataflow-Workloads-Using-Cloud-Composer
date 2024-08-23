@@ -14,7 +14,7 @@ default_args = {
    # 'retry_delay': timedelta(minutes=5),
 }
 
-dag = DAG('fetch_cricket_stats',
+dag = DAG('fetch_cricket_stats_from_api',
           default_args=default_args,
           description='Runs an external Python script',
           schedule_interval='@daily',
