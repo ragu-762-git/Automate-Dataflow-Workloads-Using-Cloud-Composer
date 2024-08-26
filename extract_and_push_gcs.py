@@ -38,7 +38,7 @@ if res.status == 200:
                 writer.writerow({field: entry.get(field) for field in field_names})
 
         
-        bucket_name = "crci-api-project-bkt"
+        bucket_name = "crci-api-project-bkt-arvind"
         storage_client = storage.Client()
         bucket = storage_client.bucket(bucket_name=bucket_name)
         destination_blob_name = f'{csv_filename}'
